@@ -5,9 +5,9 @@
 	"page2" : "hb.html",
 	"questions" : [{ 
 		"question" : "ask here a question ?",
-		"awnser" : ["awnser", "Awnser", "ans", "Ans"]
+		"answer" : ["answer", "Answer", "ans", "Ans"]
 	},{
 		"question" : "ask here an other question ?",
-		"awnser" : ["awnser", "Awnser", "ans", "Ans"]
+		"answer" : ["answer", "Answer", "ans", "Ans"]
 	}]
 }
