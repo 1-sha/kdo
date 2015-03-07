@@ -1,13 +1,10 @@
 {
-	"from" : "Peshou",
-	"to" : "JC",
+	"from" : "anon",
+	"to" : "anon",
 	"page1" : "questions.html",
-	"page2" : "hb.html",
+	"page2" : "congrats.html",
 	"questions" : [{ 
-		"question" : "ask here a question ?",
-		"answer" : ["answer", "Answer", "ans", "Ans"]
-	},{
-		"question" : "ask here an other question ?",
-		"answer" : ["answer", "Answer", "ans", "Ans"]
+		"question" : "This is a question ?",
+		"answer" : ["Answer", "answer", "Ans", "ans"]
 	}]
 }

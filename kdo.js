@@ -1,5 +1,6 @@
 window.onload = main;
 
+var DOM_title;
 var DOM_kdoframe;
 var DOM_kdopanel;
 
@@ -18,6 +19,7 @@ var data;
 
 function main()
 {
+	DOM_title = document.getElementById("title");
 	DOM_kdoframe = document.getElementById("kdoframe");
 	DOM_kdopanel = document.getElementById("kdopanel");
 	DOM_from = document.getElementById("from");
@@ -33,6 +35,7 @@ function main()
 	var txtdata = request.responseText;
 	data = JSON.parse(txtdata);
 
+	DOM_title.innerHTML = "kdo " + data.to;
 	DOM_from.innerHTML = data.from;
 	DOM_to.innerHTML = data.to;
 	firstpage = data.page1;
@@ -74,12 +77,12 @@ function kdo()
 		else
 		{
 			DOM_question.innerHTML = data.questions[currentQuestion].question;
-			DOM.answer.value = "";
+			DOM_answer.value = "";
 		}
 	}
 	else
 	{
 		alert("Bad answer");
-		DOM.answer.value = "";
+		DOM_answer.value = "";
 	}
 }
