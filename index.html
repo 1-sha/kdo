@@ -31,23 +31,30 @@
 				border: none;
 			}
 			#kdopanel {
-				/*display: none;*/
+				display: none;
 				position: absolute;
 				background-color: rgba(200,255,255,1.50);
 				padding: 20px;
 				border-radius: 10px;
+				text-align: center;
+				width: 300px;
+				left: calc(50% - 150px);
+				top: 30%;
+			}
+			#question {
+				overflow-wrap: break-word;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="loading"><img src="loading.gif"></div>
-		<!-- <iframe id="kdoframe" src="questions.html">
-		</iframe> -->
+		<iframe id="kdoframe" src="questions.html">
+		</iframe>
 		<div id="kdopanel">
-			<div id="fromto">From anon To anon</div>
+			<div id="fromto">From <span id="from">anon</span> To <span id="to">anon</span></div>
 			<div id="text">Answer this question to get your reward:</div>
 			<div id="question">Question ?</div>
-			<label>Answer:</label><input type="text">
+			<label>Answer:</label><input id="answer" type="text">
 			<button id="confirm">Confirm</button>
 		</div>
 	</body>
